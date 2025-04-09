@@ -14,8 +14,8 @@ This repository contains all my project files. Below is a list of projects with 
   <tr>
     <td>1</td>
     <td>Quiz App</td>
-    <td>/quiz-app</td>
-    <td><a href="#">Live Link</a></td>
+    <td><a href="Quiz App/">quiz-app</a></td>
+    <td><a href="https://coderak0021.github.io/MyCodeFiles/Quiz App">Live Link</a></td>
   </tr>
 </table>
 
@@ -26,5 +26,5 @@ This repository contains all my project files. Below is a list of projects with 
 ## How to Use
 1. Clone the repo using:
    ```sh
-   git clone https://github.com/yourusername/MyCodeFiles.git
+   git clone https://github.com/CoderAk0021/MyCodeFiles.git
    
