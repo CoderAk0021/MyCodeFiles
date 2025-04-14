@@ -23,6 +23,12 @@ This repository contains all my project files. Below is a list of projects with 
     <td><a href="Timer/">Timer</a></td>
     <td><a href="https://coderak0021.github.io/MyCodeFiles/Timer">Live Link</a></td>
   </tr>
+  <tr>
+    <td>3</td>
+    <td>To-Do List</td>
+    <td><a href="To-Do List/">Timer</a></td>
+    <td><a href="https://coderak0021.github.io/MyCodeFiles/To-Do List">Live Link</a></td>
+  </tr>
 </table>
 
 > **Note:** Click on the project name to explore its directory and **Live Preview** to check it online.
