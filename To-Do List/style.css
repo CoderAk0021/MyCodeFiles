@@ -1,0 +1,134 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: none;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100vh;
+  background-color:hsla(246, 100%, 88%, .5);
+  padding:20px;
+}
+.container{
+   width:95%;
+   max-width: 600px;
+   border-radius:10px;
+   box-shadow: 0px 0px 30px hsla(235, 0%, 0%, .1);
+   background:white;
+   padding:10px 0px;
+}
+header{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap:10px;
+}
+header h1{
+  font-size:150%;
+  font-weight: 550;
+}
+.add-task-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  padding:10px;
+  gap:10px;
+}
+.add-task-container input{
+  outline:none;
+  padding:10px 12px;
+  border:none;
+  background:hsla(235, 0%, 86%, .21);
+  font-weight:550;
+  color:hsla(235, 0%, 0%, .91);
+  width:100%;
+  border-radius:6px;
+}
+.add-task-container button{
+  width:20%;
+  max-width: 80px;
+  outline:none;
+  padding:10px 12px;
+  border:none;
+  background:hsla(235, 0%, 0%, .8);
+  color:white;
+  border-radius:4px;
+  transition:background 0.2s ease-in-out;
+}
+.add-task-container button:hover{
+  background:hsla(235, 0%, 0%, 1);
+}
+main{
+  padding:20px 10px;
+  max-height:350px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width:100%;
+  overflow-y:scroll;
+  min-height: 300px;
+}
+main .task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:15px;
+  padding:10px;
+  background:hsla(235, 0%, 86%, .21);
+  border-radius:10px;
+  width:100%;
+}
+.task .action-btns{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  background: hsla(235, 0%, 77%, .21);
+  border-radius: 50%;
+  transition: background 0.2s ease, color 0.2s ease,transform .9s ease;
+}
+.action-btns:hover{
+  background:hsla(235, 0%, 77%, 1);
+  color:hsla(235, 0%, 97%, 1);
+}
+.task-name{
+  font-size:90%;
+  font-weight:500;
+  max-height: 100px;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  word-break: break-all;
+}
+.task input{
+  accent-color: hsla(155, 100%, 52%, 1);
+  padding:5px;
+}
+input:checked + p{
+  text-decoration: line-through;
+  color:hsla(115, 0%, 45%, .61);
+}
+
+.task-item-deleting {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(10px); 
+    overflow: hidden;
+  }
+}

@@ -51,7 +51,7 @@ const quizQuestions = [
     }
 ];
 
-console.log(quizQuestions);
+
 
 
 let currentIndex = 0;
@@ -60,6 +60,7 @@ let quizSubmitted = false;
 let inReviewMode = false;
 let timer;
 let timeLeft = 120;
+
 
 const questionContainer = document.querySelector(".question-container");
 const optionContainer = document.querySelector(".option-container");
